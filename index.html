@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App productos</title>
+    <!--BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+    <!--NAVEGACIÓN-->
+    <nav class="navbar navbar-expand*lg navbar-dark bg-primary">
+        <a href="/" class="navbar-brand">
+            Productos
+        </a>
+    </nav>
+    <div class="container">
+        <!--CONTENIDO APLICACIÓN-->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agregar producto</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="product-form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" placeholder="Nombre Producto">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="number" step="0.01" id="price"
+                                    placeholder="Precio Producto">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="number" min="1900" value="2018" max="2100" id="year"
+                                    placeholder="Año Fabricación">
+                            </div>
+                            <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="product-list" class="col-md-8">
+
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
