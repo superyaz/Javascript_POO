@@ -65,10 +65,6 @@ document.getElementById('product-form').addEventListener('submit', (event) => {
     const price = document.getElementById('price').value;
     const year = document.getElementById('year').value;
 
-    localStorage.setItem('name', 'price', 'year');
-
-    const product = new Product(['name', 'price', 'year']);
-
     const ui = new UI();
     if (name === '' || price === '' || year === '') {
         return ui.showMessage('Completa todos los campos para continuar', 'danger')
